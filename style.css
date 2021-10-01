@@ -1,0 +1,181 @@
+body {
+  background: rgb(72, 72, 72);
+  background: linear-gradient(
+    180deg,
+    rgba(72, 72, 72, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: #ffffff;
+  margin: 0%;
+  font-family: "Fira Sans", sans-serif;
+}
+
+header {
+  background: rgb(75, 75, 75);
+  background: linear-gradient(
+    180deg,
+    rgba(75, 75, 75, 1) 0%,
+    rgba(184, 184, 184, 1) 100%
+  );
+  border-radius: 0 0 50px 50px;
+  padding: 2em;
+  margin: 0%;
+}
+
+.profile {
+  max-width: 50px;
+}
+
+.menu {
+  max-width: 50px;
+  float: right;
+  margin-top: 10px;
+}
+
+/* Account CSS */
+.account {
+  display: grid;
+  grid-template-columns: 70px 1fr 1fr;
+  grid-template-rows: 70px 70px 10px 30px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 255, 212, 1) 100%
+  );
+  border-radius: 30px 30px 30px 30px;
+  margin-top: 1em;
+  text-shadow: 2px 2px 5px black;
+}
+
+.account__title {
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: 40px;
+}
+
+.account__total {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 2em;
+  margin: 0%;
+  margin-top: 15px;
+}
+
+.account__regnumber {
+  float: center;
+  grid-column: 2;
+  grid-row: 4;
+  font-size: 1em;
+  margin: 0%;
+  margin-left: 2em;
+}
+
+.account__accountnumber {
+  float: right;
+  grid-column: 3;
+  grid-row: 4;
+  font-size: 1em;
+  margin: 0%;
+  margin-left: 6px;
+}
+
+.account__valuta {
+  grid-column: 3;
+  grid-row: 2;
+  font-size: 2em;
+  text-align: center;
+  margin: 0%;
+  margin-top: 15px;
+}
+
+.account__chip {
+  grid-column: 1;
+  grid-row: 2;
+  max-width: 35px;
+  justify-self: center;
+}
+
+hr {
+  margin: 2px;
+  grid-column: 1/4;
+  grid-row: 3;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  height: 0.5px;
+  border-style: solid;
+  border-color: white;
+  background-color: white;
+  opacity: 70%;
+}
+
+.account__swipes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.account__indicator {
+  width: 37px;
+  height: 8px;
+  background-color: black;
+  border: 2px solid white;
+  opacity: 0.5;
+  margin: 1em auto auto auto;
+  border-radius: 1em 1em 1em 1em;
+}
+
+.account--selected {
+  opacity: 1;
+}
+
+/* Posts CSS */
+.posts {
+  display: grid;
+  padding: 2em;
+  margin: 0%;
+  text-shadow: 2px 2px 5px black;
+}
+
+.posts__post {
+  background: rgb(75, 75, 75);
+  background: linear-gradient(
+    180deg,
+    rgba(75, 75, 75, 1) 0%,
+    rgba(184, 184, 184, 1) 100%
+  );
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1em;
+  border-color: #42be3a;
+  border-style: solid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 90px;
+  grid-template-areas: "image amount valuta";
+  border-radius: 1em;
+}
+
+.posts__logo {
+  max-width: 50px;
+  grid-area: image;
+  margin: auto;
+}
+
+.post--negative {
+  border-color: #ac3333;
+}
+
+.posts__amount {
+  grid-area: amount;
+  font-size: 2em;
+  text-align: center;
+  margin: auto;
+}
+
+.posts__valuta {
+  grid-area: valuta;
+  font-size: 2em;
+  text-align: center;
+  margin: auto;
+  margin-right: 30px;
+}

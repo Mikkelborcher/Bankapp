@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="Images/Group 1@2x.png" alt="" class="profile" />
+        <img src="Images/Group 2@2x.png" alt="" class="menu" />
+      </nav>
+      <section class="account">
+        <h2 class="account__title">Opsparing</h2>
+        <h1 class="account__total">26.736,38</h1>
+        <hr>
+        <h2 class="account__regnumber">7930</h2>
+        <h2 class="account__accountnumber">00015377434</h2>
+        <h3 class="account__valuta">DKK</h3>
+        <img src="images/Group 5@2x.png" alt="" class="account__chip">
+      </section>
+      <nav class="account__swipes">
+        <div class="account__indicator"></div>
+        <div class="account__indicator account--selected"></div>
+        <div class="account__indicator"></div>
+      </nav>
+    </header>
+    <main>
+      <ol class="posts">
+        <li class="posts__post">
+          <img src="Images/fakta@2x.png" alt="Fakta" class="posts__logo" />
+          <h2 class="posts__amount">48,95</h2>
+          <h5 class="posts__valuta">DKK</h5>
+        </li>
+        <li class="posts__post post--negative">
+          <img src="Images//fakta@2x.png" alt="Fakta" class="posts__logo" />
+          <h2 class="posts__amount">799</h2>
+          <h5 class="posts__valuta">DKK</h5>
+        </li>
+        <li class="posts__post post--negative">
+          <img src="Images//fakta@2x.png" alt="Fakta" class="posts__logo" />
+          <h2 class="posts__amount">512,45</h2>
+          <h5 class="posts__valuta">DKK</5>
+        </li>
+        <li class="posts__post">
+          <img src="Images//fakta@2x.png" alt="Fakta" class="posts__logo" />
+          <h2 class="posts__amount">17</h2>
+          <h5 class="posts__valuta">DKK</h5>
+        </li>
+      </ol>
+    </main>
+  </body>
 </html>
+
+
+
+<!-- 
+<button class="button">Normal button</button>
+<button class="button button--state-success">Success button</button>
+<button class="button button--state-danger">Danger button</button>
+<button class="button">This is an extra button</button>
+
+-->
